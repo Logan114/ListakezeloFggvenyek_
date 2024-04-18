@@ -1,17 +1,28 @@
-export function tablazatRendez(lista, irany) {
-  console.log(irany);
-  /* - adott mező (név) szerint rendezi a táblázatot. - akkor hívódik meg, ha a táblázat név fejlécmezőjére kattintunk. Berendezzük a listát */
+export function tablazatRendezChar(lista) {
   lista.sort(function (a, b) {
-    /* szorgalmi: a.nev első betűjének karakterkódja alapján */
-    /*    if (a.nev > b.nev) {
+    let nev1_char=0
+    let nev2_char=b.nev.charCodeAt(0)
+    let uj_nev_LISTA=[]
+    if (a.nev.charCodeAt(0) == 193){
+      nev1_char=65
+      console.log(nev1_char)
+
+    }
+    else if (a.nev.charCodeAt(0) == 201){
+      nev1_char=69
+      console.log(nev1_char)
+
+    }
+    else{
+      nev1_char=a.nev.charCodeAt(0)
+
+    }
+    if (nev1_char > nev2_char) {
       return 1;
     } else {
       return -1;
-    } */
+    } 
 
-    return a.nev.toUpperCase() > b.nev.toUpperCase()
-      ? 1 * irany
-      : -1 * irany; /*  pozitív, vagy negatív érték kell */
   });
 
   return lista;

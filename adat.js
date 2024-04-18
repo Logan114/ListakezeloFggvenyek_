@@ -6,7 +6,7 @@ export const emberekLISTA=[
         nem:true
     },
     {
-        nev:"Ádám",
+        nev:"Adám",
         kor:42,
         nem:false
     },
@@ -16,7 +16,7 @@ export const emberekLISTA=[
         nem:false
     },
     {
-        nev:"béla",
+        nev:"Béla",
         kor:72,
         nem:false
     },
